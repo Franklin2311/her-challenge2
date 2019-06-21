@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("Galaxy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  font-family: Share Mono, monospace;
+}
+
+.circle {
+  margin-top: 10px;
+  position:relative;
+  background: linear-gradient(#632B6C, #C86B98, #F09F9C, #FFC1A0);
+  border-radius: 50%;
+  width: 60%;
+  box-shadow: 10px 14px 5px 12px rgba(0,0,0,0.26);
+  padding: 15px;
+}
+
+.innercircle {
+  background-image: url("Earth.jpg");
+  background-size: 100% 100%;
+  border-radius: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#tijd {
+  text-align: center;
+  align-items: center;
+  font-size: 15px;
+  position: relative;
+  color: white;
+}
+
+#datum {
+  align-items: flex-end;
+  font-size: 15px;
+  color: white;
+}
+
+#tijd, #datum {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#zonnemaan img {
+  display: block;
+  max-width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#block {
+  background-color: white;
+  width: 200px;
+  display: inline-block;
+}
+
+#titel {
+  color: white;
+}
+
+@media screen and (min-width: 440px) { /*vanaf tablet*/
+   
+  .innercircle, .circle {
+    border-radius: 30%;
+  }
+
+  #datum, #tijd {
+    font-size: 30px;
+  }
+
+}
+
+@media screen and (min-width: 760px) { /*vanaf tablet*/
+   
+  .innercircle, .circle {
+    border-radius: 30%;
+  }
+
+  #datum, #tijd {
+    font-size: 40px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) { /*vanaf desktop*/
+ 
+  .innercircle, .circle {
+    border-radius: 15%;
+  }
+
+  #datum, #tijd {
+    font-size: 50px;
+  }
+
+}
+
+@media screen and (min-width: 1440px) { /*vanaf hd kerkklok*/
+  
+  .innercircle, .circle {
+    border-radius: 5%;
+  }
+
+  #datum, #tijd {
+    font-size:60px;
+  }
+
+}
